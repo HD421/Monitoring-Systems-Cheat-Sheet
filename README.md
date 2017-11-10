@@ -21,7 +21,7 @@ My advice to you, first find out the version of the system and try to log in usi
 | Cacti         | --                       | cactiuser/cactiuser          |admin/admin| --|
 
 ## Exploits ##
-Admin has changed default passwords? Aww, maybe he forgot to update system. Now check known vulnerabilities.
+Admin has changed default passwords? Aww, maybe he forgot to update the system. Now check known vulnerabilities.
 
 | NagiosXI | Version |
 |-------|---------|
