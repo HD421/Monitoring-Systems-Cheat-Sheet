@@ -18,7 +18,7 @@ My advice to you, first find out the version of the system and try to log in usi
 | Zabbix <= 2.4 | root/zabbix zabbix/zabbix| root/zabbix zabbix/zabbix|Admin/zabbix admin/admin |10050 10051|
 | Zabbix >= 3.0 | appliance/zabbix         | zabbix/zabbix            |Admin/zabbix Admin/Admin |10050 10051|
 | Nagios        | root/nagiosxi            |   --                     |nagiosadmin/nagios nagiosadmin/nagiosadmin|5666|
-| Cacti         | --                       | cactiuser/cactiuser          |admin/admin| --|
+| Cacti         | --                       | cactiuser/cactiuser          |admin/admin| 80 443 8080 | 
 
 ## Exploits ##
 Admin has changed default passwords? Aww, maybe he forgot to update the system. Now check known vulnerabilities.
@@ -39,6 +39,20 @@ Admin has changed default passwords? Aww, maybe he forgot to update the system. 
 |[SQL Injection](https://vulners.com/zdt/1337DAY-ID-24696)| 0.8.8f |
 |[SQL Injection](https://vulners.com/cve/CVE-2015-4634)| 0.8.8d |
 |[SQL Injection](https://vulners.com/cve/CVE-2015-4454)| 0.8.8c |
+|[Reflected XSS](https://www.trustwave.com/Resources/Security-Advisories/Advisories/TWSL2016-007/?fid=7789)| 0.8.8b |
+|[SQL Injection](https://www.trustwave.com/Resources/Security-Advisories/Advisories/TWSL2016-007/?fid=7789)| 0.8.8b |
+|[Reflected XSS](https://github.com/Cacti/cacti/issues/838)| 1.1.12 |
+|[Reflected XSS](https://github.com/Cacti/cacti/issues/867)| 1.1.13 |
+|[Path Traversal](https://github.com/Cacti/cacti/issues/877)| 1.1.15 |
+|[RCE](https://github.com/Cacti/cacti/issues/877)| 1.1.15 |
+|[Reflected XSS](https://github.com/Cacti/cacti/issues/877)| 1.1.15 |
+|[Reflected XSS](https://github.com/Cacti/cacti/issues/907)| 1.1.17 |
+|[Stored XSS](https://github.com/Cacti/cacti/issues/918)| 1.1.17 |
+|[Reflected XSS](https://github.com/Cacti/cacti/issues/1010)| 1.1.23 |
+|[RCE](https://github.com/Cacti/cacti/issues/1057)| 1.1.27 |
+|[AFR+RCE](https://github.com/Cacti/cacti/issues/1066)| 1.1.27 |
+
+
 
 ## Postexploitation ##
 You are successfully logged in and don't know what to do then? This topic is for you boiiii.
