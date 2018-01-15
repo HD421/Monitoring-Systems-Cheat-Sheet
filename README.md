@@ -60,4 +60,4 @@ You are successfully logged in and don't know what to do then? This topic is for
 ### NagiosXI ###
 [Spawning PHP Shell via component uploading](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/php_shell_via_component_upload_NagiosXI.md)
 
-[XSS -> RCE vector. Spawning shell via JS execution (worked on NagiosXI 5.4.8)](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/xss_or_js_shell_uploading_NagiosXI.md)
+[XSS -> RCE vector. Spawning shell via JS execution (worked on NagiosXI <=5.4.8)](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/xss_or_js_shell_uploading_NagiosXI.md)
