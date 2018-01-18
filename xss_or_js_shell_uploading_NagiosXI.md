@@ -1,5 +1,5 @@
 # PHP shell spawn in a single request #
-## This is working on NagiosXI 5.4.8 and may be on previous versions (I reported Reflected XSS used to spawn shell and it was fixed in 5.4.9) ##
+## This is working on NagiosXI 5.4.12 and may be on previous versions ##
 
 If you are lazy enough for [building evil component](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/php_shell_via_component_upload_NagiosXI.md) you can send single request and got your PHP shell. I'll show you DE WAY.
 ![de way](https://pbs.twimg.com/media/DS9eiy5WsAE4fVO.jpg)
@@ -33,4 +33,4 @@ After this query you can access your shell like this (example: *your_host*/nagio
 
 ## Feel free to use your shell homie. ##
 
-research was made on NagiosXI 5.4.8
+research was made on NagiosXI 5.4.12
