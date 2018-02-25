@@ -1,8 +1,8 @@
-## The usual thing is, you were told to test the company's internal network for vulnerabilities and everything looks safe, but when you scan the ports, you see the available Zabbix Server ...
+# The usual thing is, you were told to test the company's internal network for vulnerabilities and everything looks safe, but when you scan the ports, you see the available Zabbix Server ...
 
 <a href="url"><img src="https://image.prntscr.com/image/xH_BySRGQYK8ga6clU3U8g.png" align="justify" height="400" width="480" ></a>
 
-# A bit of boring theory
+## A bit of boring theory
 The Zabbix server port is 10051 by default and the agent's is 10050.
 But I do not really care where you found it and why you need this Zabbix - you want to hack it, then there's something for that.
 
@@ -23,7 +23,7 @@ However, it is passed to the zbx_sessionid field in the POST request in plain te
 
 Is it possible to reuse the intercepted zbx_sessionid? Yes, it is, while the user is logged in the system.
 
-# Hi! Jack.
+## Hi! Jack.
 And now to the point, we will use the simplest version - arp spoofing and a custom script to look for the session id.
 
 Let's enable package forwarding:
@@ -76,7 +76,7 @@ So, we're done. You happy now?
 
 <a href="url"><img src="https://image.prntscr.com/image/OwL1xGzxTFuCwuA3NI6tgQ.png" align="justify" width="480"></a>
 
-# Postexploitation time
+## Postexploitation time
 
 It's time to remove the shackles and create account with the privileges of the administrator, so as not to depend on someone else's.
 The following script will help us:
@@ -117,4 +117,4 @@ Check web interface:
 
 <a href="url"><img src="https://image.prntscr.com/image/_d22yTWMRVuP6PNGCkuZ1Q.png" align="justify" width="640"></a>
 
-# You are awesome! See ya
+### You are awesome! See ya
