@@ -21,7 +21,7 @@ However, it is passed to the zbx_sessionid field in the POST request in plain te
 
 <a href="url"><img src="http://s2.quickmeme.com/img/5b/5bb0f38792ea48eb358021ad0db2fbdb5e211b4c5c9e98ecce27f68330f7d4a3.jpg" align="justify" height=300></a>
 
-Is it possible to re-use the intercepted zbx_sessionid? Yes, it is, while the user is logged in the system.
+Is it possible to reuse the intercepted zbx_sessionid? Yes, it is, while the user is logged in the system.
 
 # Hi! Jack.
 And now to the point, we will use the simplest version - arp spoofing and a custom script to look for the session id.
@@ -117,4 +117,4 @@ Check web interface:
 
 <a href="url"><img src="https://image.prntscr.com/image/_d22yTWMRVuP6PNGCkuZ1Q.png" align="justify" width="640"></a>
 
-# You are awesome! See ya.
+# You are awesome! See ya
