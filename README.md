@@ -63,3 +63,6 @@ You are successfully logged in and don't know what to do then? This topic is for
 [XSS -> RCE vector. Spawning shell via JS execution (worked on NagiosXI <= 5.4.12)](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/xss_or_js_shell_uploading_NagiosXI.md)
 
 [RCE on Monitored Hosts through the NRPE(<= 2.14) plugin](https://vulners.com/metasploit/MSF:EXPLOIT/LINUX/MISC/NAGIOS_NRPE_ARGUMENTS)
+
+### Zabbix ###
+[Stealing administrator's session and creating our own privileged account](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/Zabbix_session_hijacking.md)
