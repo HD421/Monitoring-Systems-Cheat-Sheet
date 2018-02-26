@@ -1,4 +1,4 @@
-# Somehow you've got access to the zabbix admin account or created your own (taking advantage of this [guide](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/Zabbix_session_hijacking.md)). Time some RCE on the monitored hosts!
+# Somehow you've got access to the zabbix admin account or created your own (taking advantage of this [guide](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/Zabbix_session_hijacking.md)). Time to some RCE on the monitored hosts!
 
 In Zabbix we got ability to run remote commands. This will work in the next state of the agent configuration file:
 1. The value of the ServerActive parameter is the same as the value of the Server parameter.
