@@ -66,3 +66,5 @@ You are successfully logged in and don't know what to do then? This topic is for
 
 ### Zabbix ###
 [Stealing administrator's session and creating our own privileged account (ARP-spoofing)](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/Zabbix_session_hijacking.md)
+
+[Spawn shell on monitored agents (Unix/Windows)](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/Zabbix_spawn_shell_on_agents.md)
