@@ -27,6 +27,7 @@ Admin has changed default passwords? Aww, maybe he forgot to update the system. 
 |-------|---------|
 |[NRPE RCE](https://www.exploit-db.com/exploits/24955/)| 5.2.8<= |
 |[Chained RCE](https://www.exploit-db.com/exploits/40067/)| 5.2.7<= |
+|[Chained Remote Root](https://www.exploit-db.com/exploits/44560/)| 5.4.12<= |
 
 | Zabbix | Version |
 |-------|---------|
@@ -63,6 +64,8 @@ You are successfully logged in and don't know what to do then? This topic is for
 [XSS -> RCE vector. Spawning shell via JS execution (worked on NagiosXI <= 5.4.12)](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/xss_or_js_shell_uploading_NagiosXI.md)
 
 [RCE on Monitored Hosts through the NRPE(<= 2.14) plugin](https://vulners.com/metasploit/MSF:EXPLOIT/LINUX/MISC/NAGIOS_NRPE_ARGUMENTS)
+
+[NagiosXI Vulnerability Chaining. Death By a Thousand Cuts (<= 5.4.12)](https://blog.redactedsec.net/exploits/2018/04/26/nagios.html)
 
 ### Zabbix ###
 [Stealing administrator's session and creating our own privileged account (ARP-spoofing)](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/Zabbix_session_hijacking.md)
