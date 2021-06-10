@@ -1,9 +1,8 @@
 # Monitoring-Systems-Cheat-Sheet #
-A cheat sheet for pentesters and researchers about exploitation well-known monitoring systems.
+Cheat sheet for pentesters and researchers about monitoring systems exploitation.
 
 ## Exploring ##
-M'kay kiddo, you found monitoring system and now think what you can do about it, right? 
-My advice to you, first find out the version of the system and try to log in using the default credentials.
+Check the version of the system. Try to log in with default credentials.
 
 ### Version Check ###
 
@@ -21,7 +20,7 @@ My advice to you, first find out the version of the system and try to log in usi
 | Cacti         | --                       | cactiuser/cactiuser          |admin/admin| 80 443 8080 | 
 
 ## Exploits ##
-Admin has changed default passwords? Aww, maybe he forgot to update the system. Now check known vulnerabilities.
+Known vulnerabilities.
 
 | NagiosXI | Version |
 |-------|---------|
@@ -56,7 +55,7 @@ Admin has changed default passwords? Aww, maybe he forgot to update the system. 
 
 
 ## Postexploitation ##
-You are successfully logged in and don't know what to do then? This topic is for you boiiii.
+You are successfully logged in, what's next?
 
 ### NagiosXI ###
 [Spawning PHP Shell via component uploading](https://github.com/HD421/Monitoring-Systems-Cheat-Sheet/blob/master/php_shell_via_component_upload_NagiosXI.md)
