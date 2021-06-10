@@ -1,10 +1,5 @@
-# The usual thing is, you were told to test the company's internal network for vulnerabilities and everything looks safe, but when you scan the ports, you see the available Zabbix Server ...
-
-<a href="url"><img src="https://image.prntscr.com/image/xH_BySRGQYK8ga6clU3U8g.png" align="justify" height="400" width="480" ></a>
-
-## A bit of boring theory
+## A bit of theory
 The Zabbix server port is 10051 by default and the agent's is 10050.
-But I do not really care where you found it and why you need this Zabbix - you want to hack it, then there's something for that.
 
 Traffic between the agent and the server (if you don't configure the encryption of the transmitted data in the agent configuration)
 is transmitted in plaintext, in TCP packets with the PSH flag.
@@ -16,15 +11,13 @@ This means that when authorizing a user on the system (for example, when the adm
 For each user, zbx_sessionid is generated, and used in queries to the Zabbix server.
 
 The zbx_sessionid transfer process occurs when the user is authorized through the web interface, entering their login and password.
-Value of zbx_sessionid «salted» with timestamp which almost excludes his forgery.
+Value of zbx_sessionid «salted» with timestamp which almost excludes its forgery.
 However, it is passed to the zbx_sessionid field in the POST request in plain text.
-
-<a href="url"><img src="http://s2.quickmeme.com/img/5b/5bb0f38792ea48eb358021ad0db2fbdb5e211b4c5c9e98ecce27f68330f7d4a3.jpg" align="justify" height=300></a>
 
 Is it possible to reuse the intercepted zbx_sessionid? Yes, it is, while the user is logged in the system.
 
-## Hi! Jack.
-And now to the point, we will use the simplest version - arp spoofing and a custom script to look for the session id.
+## Hijacking
+We will use the simplest method - arp spoofing and a custom script to look for the session id.
 
 Let's enable package forwarding:
  ```bash
@@ -72,13 +65,10 @@ while True:
         s.close()
 ```
 
-So, we're done. You happy now?
-
-<a href="url"><img src="https://image.prntscr.com/image/OwL1xGzxTFuCwuA3NI6tgQ.png" align="justify" width="480"></a>
 
 ## Postexploitation time
 
-It's time to remove the shackles and create account with the privileges of the administrator, so as not to depend on someone else's.
+It's time to create account with administrator privileges.
 The following script will help us:
 
 ```python
@@ -109,12 +99,8 @@ zapi.login(user, password)
 print("Connected to Zabbix API Version %s" % zapi.api_version())
 ```
 
-Voila!
-
 <a href="url"><img src="https://image.prntscr.com/image/yayqk9aPQ0C_LsHYF-HNow.png" align="justify" width="480"></a>
 
 Check web interface:
 
 <a href="url"><img src="https://image.prntscr.com/image/_d22yTWMRVuP6PNGCkuZ1Q.png" align="justify" width="640"></a>
-
-### You are awesome! See ya
