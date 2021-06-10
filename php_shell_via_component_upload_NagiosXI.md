@@ -37,15 +37,15 @@ function shellaction_component_init()
 
 ```
 ## Component creation and uploading ##
-1)First, the component must be saved with a name similar to the variable *$shellaction_component_name*.inc.php (example: shellaction.inc.php).
+1) First, the component must be saved with a name similar to the variable *$shellaction_component_name*.inc.php (example: shellaction.inc.php).
 
-2)Then, you need to put the file in a folder with the same name of the variable (example: shellaction).
+2) Put the file in a folder with the same name of the variable (example: shellaction).
 
 ![file into folder](https://image.prntscr.com/image/wxoJEU6gSgmmRG3wHDovuA.png)
 
-3)After all the folder should be zip archived (example for *nix: zip -r shell.zip shellaction).
+3) After all the folder should be zip archived (example for *nix: zip -r shell.zip shellaction).
 
-Now we need to go to the section manage components and upload our component (shell.zip).
+4) Go to the section manage components and upload our component (shell.zip).
 
 ![manage components](https://image.prntscr.com/image/l7K9XR4hS0WWQMQnApg6Bw.png)
 
@@ -58,4 +58,4 @@ After that we can execute system commands directly through the address bar of th
 ![it works!](https://image.prntscr.com/image/ouIOS_EpTxWQkk4lOnDofw.png)
 ## We are done here! ##
 
-research was made on NagiosXI 5.4.8
+Tested on NagiosXI 5.4.8
